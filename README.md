@@ -29,27 +29,38 @@
 
 ## Navigation
 
-- [Introduction Videos](#introduction-video-by-network-chuck)
-- [What and Why](#what-and-why)
-- [Philosophy](#philosophy)
-  - [Breaking problems into components](#breaking-problems-into-components)
-  - [Too many prompts](#too-many-prompts)
-  - [The Fabric approach to prompting](#our-approach-to-prompting)
-- [Quickstart](#quickstart)
-  - [Setting up the fabric commands](#setting-up-the-fabric-commands)
-  - [Using the fabric client](#using-the-fabric-client)
-  - [Just use the Patterns](#just-use-the-patterns)
-  - [Create your own Fabric Mill](#create-your-own-fabric-mill)
-- [Updating](#updating)
-- [Structure](#structure)
-  - [Components](#components)
-  - [CLI-native](#cli-native)
-  - [Directly calling Patterns](#directly-calling-patterns)
-- [Examples](#examples)
-- [Custom Patterns](#custom-patterns)
-- [Helper Apps](#helper-apps)
-- [Meta](#meta)
-  - [Primary contributors](#primary-contributors)
+- [`fabric`](#fabric)
+  - [Navigation](#navigation)
+  - [Introduction video by Network Chuck!](#introduction-video-by-network-chuck)
+  - [What and why](#what-and-why)
+  - [Philosophy](#philosophy)
+    - [Breaking problems into components](#breaking-problems-into-components)
+    - [Too many prompts](#too-many-prompts)
+    - [Our approach to prompting](#our-approach-to-prompting)
+  - [Quickstart](#quickstart)
+    - [Required Python Version](#required-python-version)
+    - [Setting up the fabric commands](#setting-up-the-fabric-commands)
+  - [Updating](#updating)
+    - [Using the `fabric` client](#using-the-fabric-client)
+      - [Example commands](#example-commands)
+    - [Just use the Patterns](#just-use-the-patterns)
+    - [Create your own Fabric Mill](#create-your-own-fabric-mill)
+  - [Structure](#structure)
+    - [Components](#components)
+    - [CLI-native](#cli-native)
+    - [Directly calling Patterns](#directly-calling-patterns)
+  - [Examples](#examples)
+  - [Custom Patterns](#custom-patterns)
+  - [Agents](#agents)
+  - [Helper Apps](#helper-apps)
+  - [yt (YouTube)](#yt-youtube)
+  - [ts (Audio transcriptions)](#ts-audio-transcriptions)
+    - [Installation](#installation)
+  - [Save](#save)
+    - [usage](#usage)
+    - [Example](#example)
+  - [Meta](#meta)
+    - [Primary contributors](#primary-contributors)
 
 <br />
 
@@ -284,7 +295,7 @@ pbpaste | fabric --stream --pattern analyze_claims
 3. Run the `extract_wisdom` Pattern with the `--stream` option to get immediate and streaming results from any Youtube video (much like in the original introduction video).
 
 ```bash
-yt --transcript https://youtube.com/watch?v=uXs-zPc63kM | fabric --stream --pattern extract_wisdom
+yt --transcript https://www.youtube.com/watch?v=iqAtBbGr3VY | fabric --stream --pattern extract_wisdom
 ```
 
 4. **new** All of the patterns have been added as aliases to your bash (or zsh) config file
